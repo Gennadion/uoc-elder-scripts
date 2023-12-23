@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter III: Reflected XSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>University of Cyprodiil Library Search v0.01</h1>
+    <i>Now with XSS-spell protection!</i>
+    <div class="container">
+        <label for="queryInput">Enter your query:</label>
+        <input type="text" id="queryInput" placeholder="Type your query...">
+        <button id="submitButton" onclick="updateURL()">Submit</button>
+
+        <div id="output"></div>
+        <div id="share"></div>
+    </div>
+    <div id="secret"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
